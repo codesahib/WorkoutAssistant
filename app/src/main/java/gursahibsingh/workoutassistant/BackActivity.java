@@ -11,5 +11,5 @@ public class BackActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_back);
     }
-    //Functionality Here
+    //Functionality Here.
 }
