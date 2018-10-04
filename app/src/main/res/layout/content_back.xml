@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context="gursahibsingh.workoutassistant.BackActivity">
+
+    <TextView
+        android:id="@+id/back_ex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Deadlift"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/back_ex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_ex1"
+        android:layout_marginTop="70dp"
+        android:text="Rows"
+        android:textSize="20sp"
+        android:textColor="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/back_ex3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_ex2"
+        android:layout_marginTop="70dp"
+        android:text="Pulldown"
+        android:textSize="20sp"
+        android:textColor="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/back_ex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_ex3"
+        android:layout_marginTop="70dp"
+        android:text="Pulley+Hyper Extension"
+        android:textSize="20sp"
+        android:textColor="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/back_ex5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_ex4"
+        android:layout_marginTop="70dp"
+        android:text="Pullover"
+        android:textSize="20sp"
+        android:textColor="#CCCCCC"/>
+
+    <EditText
+        android:id="@+id/back_ex1_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex1"
+        android:layout_marginTop="12dp"
+        android:hint="Set"
+        android:inputType="number"
+        android:textColorLink="@android:color/black"
+         />
+
+    <EditText
+        android:id="@+id/back_ex1_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex1_set"
+        android:layout_below="@+id/back_ex1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex1_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex1_rep"
+        android:layout_below="@+id/back_ex1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/back_ex1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/back_ex1_weight"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/back_ex1_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_ex1"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/back_ex2_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex2"
+        android:layout_marginTop="12dp"
+        android:hint="Set"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex2_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex2_set"
+        android:layout_below="@+id/back_ex2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex2_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex2_rep"
+        android:layout_below="@+id/back_ex2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/back_ex2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/back_ex2_weight"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/back_ex2_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_ex2"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/back_ex3_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex3"
+        android:layout_marginTop="12dp"
+        android:hint="Set"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex3_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex3_set"
+        android:layout_below="@+id/back_ex3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex3_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex3_rep"
+        android:layout_below="@+id/back_ex3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/back_ex3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/back_ex3_weight"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/back_ex3_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_ex3"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/back_ex4_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex4"
+        android:layout_marginTop="12dp"
+        android:hint="Set"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex4_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex4_set"
+        android:layout_below="@+id/back_ex4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex4_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex4_rep"
+        android:layout_below="@+id/back_ex4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/back_ex4_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/back_ex4_weight"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/back_ex4_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_ex4"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/back_ex5_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex5"
+        android:layout_marginTop="12dp"
+        android:hint="Set"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex5_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex5_set"
+        android:layout_below="@+id/back_ex5"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/back_ex5_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back_ex5_rep"
+        android:layout_below="@+id/back_ex5"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/back_ex5_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_ex5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/back_ex5_weight"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/back_ex5_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_ex5"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back_ex1_button"
+        android:layout_toEndOf="@+id/back_ex1_button"
+        android:layout_toRightOf="@+id/back_ex1_button"
+        android:text="Volume"
+        android:textSize="20sp"
+        android:textColor="#CCCCCC"/>
+
+    <Button
+        android:id="@+id/back_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="ADD" />
+</android.widget.RelativeLayout>

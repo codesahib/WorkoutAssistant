@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gursahibsingh.workoutassistant.IntroActivity"
+    tools:showIn="@layout/activity_intro">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/intro_name"
+        android:textSize="32sp"
+        android:textColor="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/text_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_below="@id/edit_name"
+        android:layout_marginTop="18dp"
+        android:text="Age"
+        android:textSize="32sp"
+        android:textColor="#CCCCCC"/>
+
+    <TextView
+        android:id="@+id/text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/edit_age"
+        android:text="Weight(in Kg)"
+        android:textSize="32sp"
+        android:textColor="#CCCCCC"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_name"
+        android:layout_alignStart="@+id/text_name"
+        android:layout_alignTop="@+id/text_name"
+        android:layout_marginTop="35dp"
+        android:inputType="textPersonName"
+        android:textColor="#CCCCCC"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_age"
+        android:layout_alignStart="@+id/text_age"
+        android:layout_below="@+id/text_age"
+        android:inputType="number"
+        android:textSize="32sp"
+        android:textColor="#CCCCCC"/>
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_weight"
+        android:layout_alignStart="@+id/text_weight"
+        android:layout_below="@+id/text_weight"
+        android:inputType="number"
+        android:textSize="32sp"
+        android:textColor="#CCCCCC"/>
+
+    <Button
+        android:id="@+id/button_chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_tricep"
+        android:layout_alignEnd="@+id/edit_age"
+        android:layout_alignRight="@+id/edit_age"
+        android:layout_marginBottom="17dp"
+        android:text="CHEST"
+        android:background="#DDDDDD"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_chest"
+        android:layout_alignBottom="@+id/button_chest"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/edit_weight"
+        android:layout_toRightOf="@+id/edit_weight"
+        android:text="BACK"
+        android:background="#DDDDDD"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/button_bicep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_back"
+        android:layout_alignBottom="@+id/button_back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Bicep"
+        android:background="#DDDDDD"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button_tricep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_chest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_chest"
+        android:layout_marginBottom="11dp"
+        android:background="#DDDDDD"
+        android:text="TRICEP"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/button_leg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_shoulder"
+        android:layout_alignBottom="@+id/button_shoulder"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="LEGS"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button_shoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_chest"
+        android:layout_toEndOf="@+id/text_name"
+        android:layout_toRightOf="@+id/text_name"
+        android:text="SHOULDERS"
+        android:textSize="22sp" />
+
+
+
+</android.widget.RelativeLayout>

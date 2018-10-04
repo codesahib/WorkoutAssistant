@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Workout Assistant</string>
+    <string name="title_activity_launcher">Workout Assistant</string>
+    <string name="launcher_title">WELCOME</string>
+    <string name="launcher_button">Enter</string>
+    <string name="title_activity_intro">Enter Details</string>
+    <string name="intro_name">Name</string>
+    <string name="intro_weight">Weight(Kg)</string>
+    <string name="intro_age">Age</string>
+    <string name="chest_title">Chest Exercises</string>
+</resources>

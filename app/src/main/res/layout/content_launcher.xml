@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gursahibsingh.workoutassistant.LauncherActivity"
+    tools:showIn="@layout/activity_launcher">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_x="111dp"
+        android:layout_y="149dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/launcher_title"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="182dp" />
+</android.widget.AbsoluteLayout>
