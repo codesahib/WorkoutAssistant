@@ -1,350 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#555555"
-    tools:context="gursahibsingh.workoutassistant.ChestActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/chest_ex1"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Bench Press"
-        android:textColor="#CCCCCC"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:background="#555555">
+        <Button
+            android:id="@+id/addButton_Chest"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            />
+        <EditText
+            android:id="@+id/newExe_Chest"
+            android:hint="Chest Exercises"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="#fff"/>
+        <Spinner
+            android:id="@+id/spinner_Chest"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#fff">
+                    </Spinner>
 
-    <TextView
-        android:id="@+id/chest_ex2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/chest_ex1"
-        android:layout_marginTop="70dp"
-        android:text="Incline Db"
-        android:textSize="20sp"
-        android:textColor="#CCCCCC"/>
-
-    <TextView
-        android:id="@+id/chest_ex3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/chest_ex2"
-        android:layout_marginTop="70dp"
-        android:text="Dips/Decline Db"
-        android:textSize="20sp"
-        android:textColor="#CCCCCC"/>
-
-    <TextView
-        android:id="@+id/chest_ex4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/chest_ex3"
-        android:layout_marginTop="70dp"
-        android:text="Fly+Fly"
-        android:textSize="20sp"
-        android:textColor="#CCCCCC"/>
-
-    <TextView
-        android:id="@+id/chest_ex5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/chest_ex4"
-        android:layout_marginTop="70dp"
-        android:text="Crossover"
-        android:textSize="20sp"
-        android:textColor="#CCCCCC"/>
-
-    <EditText
-        android:id="@+id/chest_ex1_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex1"
-        android:layout_marginTop="12dp"
-        android:hint="Set"
-        android:inputType="number"
-        android:textColorLink="@android:color/black"
-         />
-
-    <EditText
-        android:id="@+id/chest_ex1_rep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex1_set"
-        android:layout_below="@+id/chest_ex1"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="12dp"
-        android:hint="Reps"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex1_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex1_rep"
-        android:layout_below="@+id/chest_ex1"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:hint="Weight"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/chest_ex1_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/chest_ex1_weight"
-        android:text="Done"
-        android:background="#DDDDDD"/>
-
-    <TextView
-        android:id="@+id/chest_ex1_vol"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/chest_ex1"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp" />
+    </LinearLayout>
 
 
-    <EditText
-        android:id="@+id/chest_ex2_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex2"
-        android:layout_marginTop="12dp"
-        android:hint="Set"
-        android:inputType="number" />
 
-    <EditText
-        android:id="@+id/chest_ex2_rep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex2_set"
-        android:layout_below="@+id/chest_ex2"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="12dp"
-        android:hint="Reps"
-        android:inputType="number" />
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/programmingList">
+    </android.support.v7.widget.RecyclerView>
 
-    <EditText
-        android:id="@+id/chest_ex2_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex2_rep"
-        android:layout_below="@+id/chest_ex2"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:hint="Weight"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/chest_ex2_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex2"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/chest_ex2_weight"
-        android:text="Done"
-        android:background="#DDDDDD"/>
-
-    <TextView
-        android:id="@+id/chest_ex2_vol"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/chest_ex2"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp" />
+</LinearLayout>
 
 
-    <EditText
-        android:id="@+id/chest_ex3_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex3"
-        android:layout_marginTop="12dp"
-        android:hint="Set"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex3_rep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex3_set"
-        android:layout_below="@+id/chest_ex3"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="12dp"
-        android:hint="Reps"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex3_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex3_rep"
-        android:layout_below="@+id/chest_ex3"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:hint="Weight"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/chest_ex3_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex3"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/chest_ex3_weight"
-        android:text="Done"
-        android:background="#DDDDDD"/>
-
-    <TextView
-        android:id="@+id/chest_ex3_vol"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/chest_ex3"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp" />
-
-
-    <EditText
-        android:id="@+id/chest_ex4_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex4"
-        android:layout_marginTop="12dp"
-        android:hint="Set"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex4_rep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex4_set"
-        android:layout_below="@+id/chest_ex4"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="12dp"
-        android:hint="Reps"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex4_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex4_rep"
-        android:layout_below="@+id/chest_ex4"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:hint="Weight"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/chest_ex4_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex4"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/chest_ex4_weight"
-        android:text="Done"
-        android:background="#DDDDDD"/>
-
-    <TextView
-        android:id="@+id/chest_ex4_vol"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/chest_ex4"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/chest_ex5_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex5"
-        android:layout_marginTop="12dp"
-        android:hint="Set"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex5_rep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex5_set"
-        android:layout_below="@+id/chest_ex5"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="12dp"
-        android:hint="Reps"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/chest_ex5_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/chest_ex5_rep"
-        android:layout_below="@+id/chest_ex5"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:hint="Weight"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/chest_ex5_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/chest_ex5"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/chest_ex5_weight"
-        android:text="Done"
-        android:background="#DDDDDD"/>
-
-    <TextView
-        android:id="@+id/chest_ex5_vol"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/chest_ex5"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/chest_ex1_button"
-        android:layout_toEndOf="@+id/chest_ex1_button"
-        android:layout_toRightOf="@+id/chest_ex1_button"
-        android:text="Volume"
-        android:textSize="20sp"
-        android:textColor="#CCCCCC"/>
-
-    <Button
-        android:id="@+id/chest_next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="9dp"
-        android:background="#DDDDDD"
-        android:text="ADD" />
-</android.widget.RelativeLayout>

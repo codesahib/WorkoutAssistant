@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imgIcon"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imgIcon"
+        android:layout_toRightOf="@+id/imgIcon"
+        android:layout_weight="1"
+        android:text="Exercise"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/rep"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="75dp"
+        android:gravity="center"
+        android:hint="rep"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/set"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rep"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="55dp"
+        android:gravity="center"
+        android:hint="set"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="55dp"
+        android:gravity="center"
+        android:hint="weight"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/vol"
+        android:hint="Volume"
+        android:textColor="#000"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/calculate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:text="Calculate"
+        android:backgroundTint="#000"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/txtTitle"
+        android:layout_alignBottom="@+id/txtTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
